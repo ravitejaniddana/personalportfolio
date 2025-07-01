@@ -2455,7 +2455,7 @@ body{
   line-height: 1.5;
 }
 
-.project-info button {
+.project-info .github-btn {
   font-size: var(--small-font-size);
   padding: 10px 20px;
   background-color: #2200493d;
@@ -2468,7 +2468,7 @@ body{
   transition: 0.3s;
 }
 
-.project-info button:hover {
+.project-info .github-btn:hover {
   box-shadow: 0 0 15px #72a1de81;
   opacity: 0.9;
 }
@@ -2504,7 +2504,7 @@ body{
     font-size: var(--small-font-size);
   }
 
-  .project-info button {
+  .project-info .github-btn {
     font-size: var(--tiny-font-size);
     padding: 8px 15px;
   }
