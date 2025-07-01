@@ -2393,11 +2393,12 @@ body{
   display: flex;
   flex-direction: column;
   gap: 80px;
+  width: 100%;
 }
 
 .project-card {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   row-gap: 0;
   column-gap: 35px;
   margin-bottom: 1.5em; 
@@ -2417,6 +2418,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  min-width: 300px;
 }
 
 .project-vidbox video {
@@ -2433,6 +2436,8 @@ body{
   align-items: flex-start;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+  flex: 1;
+  min-width: 300px;
 }
 
 .project-info h1 {
