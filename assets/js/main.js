@@ -71,6 +71,7 @@ serviceCardWithModals.forEach((serviceCardWithModal) => {
 
 // Filter portfolio cards according to portfolio tabs.
 document.addEventListener("DOMContentLoaded", () => {
+   
    const portfolioTabs = document.querySelector(".portfolio-tabs");
    const portfolioTabBtns = portfolioTabs.querySelectorAll(".tab-btn");
    const cardsWithModals = document.querySelectorAll(".portfolio-container .card-with-modal");
@@ -80,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
          const filter = tabBtn.getAttribute("data-filter");
 
          cardsWithModals.forEach((cardWithModal) => {
-            if(filter === "all" || cardWithModal.classList.contains(filter)){
+            if((filter === "all" && !cardWithModal.classList.contains("templates")) || cardWithModal.classList.contains(filter)){
                cardWithModal.classList.remove("hidden");
 
                setTimeout(() => {
