@@ -171,7 +171,7 @@ sueContactFormAlert = document.querySelector(".contact-form-alert");
 sueContactForm.addEventListener('submit', function(event) {
    event.preventDefault();
    // these IDs from the previous steps
-   emailjs.sendForm('service_93yngyc', 'template_gvori0h', '#sue-contact-form')
+emailjs.sendForm('service_93yngyc', 'template_gvori0h', sueContactForm)
        .then(() => {
          //   console.log('SUCCESS!');
          sueContactFormAlert.innerHTML = "<span>Your message sent successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
